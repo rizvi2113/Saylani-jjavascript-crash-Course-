@@ -1,5 +1,5 @@
 //1 function in a function
-/*function outerFunction(Outer){
+function outerFunction(Outer){
     console.log(typeof(Outer))
     return function(Inner){
         console.log(typeof(Inner))
@@ -7,8 +7,8 @@
     }
 
 }
-let a = +prompt("Enter the value fot the outer Function")
-let newFunction = outerFunction(a);
+let out = +prompt("Enter the value for the outer Function")
+let newFunction = outerFunction(out);
 let b = +prompt("Enter the value for the Inner Function")
 newFunction(b);
 
@@ -40,7 +40,7 @@ let c = Find(word);
 console.log(c);
 
 //3 Add a new paragraph by using a function
-let a = document.getElementById("one");
+let one = document.getElementById("one");
 
 function addPara(addToPara){
    let para = document.createElement("p")
@@ -133,10 +133,9 @@ let employee= {
 
   }
 
-  let obj = savedata("Employee",employee)
-  let newObj=[obj("Employee")]
-  console.log(newObj)
-*/
+  let obj = savedata("Employee",employee);
+  let newObj=[obj("Employee")];
+  console.log(newObj);
 
 
 
